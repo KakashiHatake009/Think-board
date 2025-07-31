@@ -15,7 +15,9 @@ export const HomePage = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const res = await api.get("http://localhost:4444/api/notes");
+        const res = await api.get(
+          "https://think-board-rho.vercel.app/api/notes"
+        );
         setNotes(res.data);
         setIsLoading(false);
       } catch (error) {
