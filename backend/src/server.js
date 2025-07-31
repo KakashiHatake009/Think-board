@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 app.use(
     cors({
-        origin: "https://think-board-rho.vercel.app/",
+        origin: "https://think-board-rho.vercel.app",
     })
 );
 
